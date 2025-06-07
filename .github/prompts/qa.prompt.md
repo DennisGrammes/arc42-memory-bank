@@ -1,3 +1,6 @@
+---
+description: "Quality assurance for Memory Bank tasks"
+---
 # MEMORY BANK QA MODE
 
 Perform comprehensive quality assurance checks to verify code integrity and documentation consistency at any phase of development.

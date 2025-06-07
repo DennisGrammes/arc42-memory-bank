@@ -1,3 +1,6 @@
+---
+description: "Reflection and archiving"
+---
 # MEMORY BANK REFLECT+ARCHIVE MODE
 
 Facilitate reflection on the completed task and, upon explicit command, archive the relevant documentation and update the Memory Bank. This mode combines the final two stages of the development workflow.

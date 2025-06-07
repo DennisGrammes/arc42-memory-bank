@@ -141,13 +141,19 @@ Before planning can begin, verify the file state:
 
 ```mermaid
 graph TD
-    Start["File State<br>Verification"] --> CheckTasks{"tasks.md<br>initialized?"}
-    
-    CheckTasks -->|"No"| ErrorTasks["ERROR:<br>Return to VAN Mode"]
+    Start["File State<br>Verification"] --> CheckTasks{"tasks.md<br>exists?"}
+
+    CheckTasks -->|"No"| InitTasks["Create tasks.md<br>from description"]
     CheckTasks -->|"Yes"| CheckActive{"activeContext.md<br>exists?"}
+
+    InitTasks --> CheckActive
     
     CheckActive -->|"No"| ErrorActive["ERROR:<br>Return to VAN Mode"]
-    CheckActive -->|"Yes"| ReadyPlan["Ready for<br>Planning"]
+    CheckActive -->|"Yes"| CheckBrief{"projectbrief.md<br>exists?"}
+
+    CheckBrief -->|"No"| InitBrief["Create projectbrief.md<br>from description"]
+    CheckBrief -->|"Yes"| ReadyPlan["Ready for<br>Planning"]
+    InitBrief --> ReadyPlan
 ```
 
 ## 📝 TASKS.MD UPDATE FORMAT
