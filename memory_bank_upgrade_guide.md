@@ -2,14 +2,14 @@
 
 ## Introduction
 
-I'm excited to introduce a significant upgrade to the Memory Bank system – evolving from a monolithic all-in-one approach to a modular, graph-based system that integrates with Cursor's custom modes. This document explains the reasons behind this transition, its benefits, and how to get the most out of the new system.
+I'm excited to introduce a significant upgrade to the Memory Bank system – evolving from a monolithic all-in-one approach to a modular, graph-based system that integrates with GitHub Copilot's custom modes. This document explains the reasons behind this transition, its benefits, and how to get the most out of the new system.
 
 ```mermaid
 graph TD
     Old["Old System<br>Monolithic Approach"] --> New["New System<br>Modular JIT Architecture"]
     
     Old --- OldFeatures["• Single file structure<br>• All rules loaded at once<br>• Fixed workflow"]
-    New --- NewFeatures["• Mode-specific rules<br>• Just-in-time loading<br>• Visual process maps<br>• Cursor custom modes integration"]
+    New --- NewFeatures["• Mode-specific rules<br>• Just-in-time loading<br>• Visual process maps<br>• GitHub Copilot custom modes integration"]
     
     style Old fill:#f8d486,stroke:#e8b84d
     style New fill:#4da6ff,stroke:#0066cc,color:white
@@ -89,25 +89,25 @@ graph TD
 
 This graph-based approach is particularly effective when working with large, complex projects where different components have varied requirements and dependencies. The system can efficiently navigate these complexities without overwhelming the context window.
 
-### CREATIVE Mode and Claude's "Think" Tool
+### CREATIVE Mode and the Think Methodology
 
-One notable aspect of the new system is that the CREATIVE mode is conceptually based on Anthropic's Claude "Think" tool methodology, as described in their [engineering blog](https://www.anthropic.com/engineering/claude-think-tool). This approach has been enhanced and integrated into the Memory Bank workflow:
+The CREATIVE mode incorporates a structured think-based approach for problem solving:
 
 - **Structured Exploration**: The CREATIVE mode guides users through systematic exploration of design options
 - **Explicit Reasoning**: Requires documentation of pros and cons for different approaches
 - **Component Breakdown**: Helps break complex problems into manageable components
 - **Decision Documentation**: Creates formal records of design decisions with clear rationales
-- **Continuous Refinement**: The implementation will continue to evolve as Claude's capabilities advance
+- **Continuous Refinement**: The implementation will continue to evolve as Think methodology's capabilities advance
 
 This methodology has proven particularly effective for complex design decisions, ensuring that all options are thoroughly considered before implementation begins.
 
-## Integration with Cursor Custom Modes
+## Integration with GitHub Copilot Custom Modes
 
-The new system takes full advantage of Cursor's custom modes feature, which allows for specialized AI behaviors for different tasks.
+The new system takes full advantage of GitHub Copilot's custom modes feature, which allows for specialized AI behaviors for different tasks.
 
-### What Are Cursor Custom Modes?
+### What Are GitHub Copilot Custom Modes?
 
-Cursor custom modes allow you to configure different AI behaviors with specific tools and custom instructions. The new Memory Bank system creates specialized modes for each development phase:
+GitHub Copilot custom modes allow you to configure different AI behaviors with specific tools and custom instructions. The new Memory Bank system creates specialized modes for each development phase:
 
 ```mermaid
 graph LR
@@ -141,13 +141,13 @@ Each mode loads only its required rule set, optimizing context usage and providi
 | IMPLEMENT | Code Implementation | Systematic building, command execution, testing |
 | QA | Technical Validation | Dependency verification, configuration validation, build testing |
 
-### Beyond Cursor's Standard Custom Modes Implementation
+### Beyond GitHub Copilot's Standard Custom Modes Implementation
 
-While Cursor's [documentation on custom modes](https://docs.cursor.com/chat/custom-modes) describes them primarily as standalone configurations with adjusted prompts and tool selections, Memory Bank significantly extends this concept:
+While GitHub Copilot's [documentation on custom modes](https://docs.GitHub Copilot.com/chat/custom-modes) describes them primarily as standalone configurations with adjusted prompts and tool selections, Memory Bank significantly extends this concept:
 
-#### Standard Cursor Custom Modes Approach
+#### Standard GitHub Copilot Custom Modes Approach
 
-According to Cursor's documentation, custom modes typically consist of:
+According to GitHub Copilot's documentation, custom modes typically consist of:
 - Setting a name, icon, and shortcut
 - Enabling or disabling specific tools
 - Adding custom instructions (prompts)
@@ -158,7 +158,7 @@ Their example modes (Teach, Refactor, Plan, etc.) function as isolated configura
 
 ```mermaid
 graph TD
-    subgraph "Cursor's Standard Approach"
+    subgraph "GitHub Copilot's Standard Approach"
         M1["Mode 1<br>Static Instructions"]
         M2["Mode 2<br>Static Instructions"]
         M3["Mode 3<br>Static Instructions"]
@@ -337,16 +337,16 @@ For those interested in the technical details, the new system uses a graph-based
 
 ```mermaid
 graph TD
-    Main["main.mdc<br>Core Rules"] --> Platform["platform-awareness.mdc<br>OS Detection"]
-    Main --> FileV["file-verification.mdc<br>File Structure"]
-    Main --> ComplexityDT["complexity-decision-tree.mdc<br>Task Classification"]
+    Main["main.md<br>Core Rules"] --> Platform["platform-awareness.md<br>OS Detection"]
+    Main --> FileV["file-verification.md<br>File Structure"]
+    Main --> ComplexityDT["complexity-decision-tree.md<br>Task Classification"]
     
     subgraph "Mode-Specific Maps"
-        VanMap["van-mode-map.mdc"]
-        PlanMap["plan-mode-map.mdc"]
-        CreativeMap["creative-mode-map.mdc"]
-        ImplementMap["implement-mode-map.mdc"]
-        QAMap["qa-mode-map.mdc"]
+        VanMap["van-mode-map.md"]
+        PlanMap["plan-mode-map.md"]
+        CreativeMap["creative-mode-map.md"]
+        ImplementMap["implement-mode-map.md"]
+        QAMap["qa-mode-map.md"]
     end
     
     Main --> VanMap & PlanMap & CreativeMap & ImplementMap & QAMap
@@ -414,7 +414,7 @@ This Memory Bank system is a personal hobby project that brings me joy to build 
 
 1. **Further Optimization of JIT Rules**: Refining the rule loading system to provide even more efficient context utilization and faster response times
 2. **User Feedback Integration**: Establishing a structured feedback loop to gather insights from early adopters and refine the system based on real-world usage patterns
-3. **PRD Mode Development**: Creating a dedicated Product Requirements Document mode that leverages Cursor's advanced AI models to help users construct comprehensive product specifications within the same environment as their development work
+3. **PRD Mode Development**: Creating a dedicated Product Requirements Document mode that leverages GitHub Copilot's advanced AI models to help users construct comprehensive product specifications within the same environment as their development work
 
 ### Additional Possibilities Under Consideration
 
@@ -444,16 +444,16 @@ My recommendations:
 - **Testing**: If you want to try the new system with an existing project, make a backup first and experiment in a safe environment
 - **Advanced Users**: Consider the new system for substantial development work on complex projects
 
-This is an experimental system that I've created as a personal hobby project. I encourage you to try it, provide feedback, and adapt it to your own workflows. By leveraging Cursor's custom modes and visual process maps, the new Memory Bank system provides a powerful framework for disciplined, systematic development that scales with project complexity.
+This is an experimental system that I've created as a personal hobby project. I encourage you to try it, provide feedback, and adapt it to your own workflows. By leveraging GitHub Copilot's custom modes and visual process maps, the new Memory Bank system provides a powerful framework for disciplined, systematic development that scales with project complexity.
 
 ---
 
 ## Resources
 
-- [Cursor Custom Modes Documentation](https://docs.cursor.com/chat/custom-modes)
-- Memory Bank Reference Files (in .cursor/rules/isolation_rules/)
+- [GitHub Copilot Custom Modes Documentation](https://docs.GitHub Copilot.com/chat/custom-modes)
+- Memory Bank Reference Files (in .GitHub Copilot/rules/isolation_rules/)
 - Mode-specific instruction files (van_instructions.md, plan_instructions.md, etc.)
-- [CREATIVE Mode and Claude's "Think" Tool](creative_mode_think_tool.md)
+- [CREATIVE Mode and Think methodology's "Think" Tool](creative_mode_think_tool.md)
 
 ## The Need for Change
 

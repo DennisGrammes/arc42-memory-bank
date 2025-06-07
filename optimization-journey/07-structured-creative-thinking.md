@@ -13,7 +13,7 @@ Despite previous improvements to creative phase handling, real-world usage revea
 1. **Mandatory Creative Phases for Level 3-4 Tasks**
    - Made creative phases required, not optional, for complex tasks
    - Added explicit directive in Global Rules stating "Creative phases are MANDATORY for all major design/architecture decisions in Level 3-4 tasks"
-   - Created creative-phase-triggers.mdc with clear guidelines on when creative phases must be used
+   - Created creative-phase-triggers.md with clear guidelines on when creative phases must be used
 
 2. **Structured Thinking Framework**
    - Enhanced creative phase format with systematic problem breakdown

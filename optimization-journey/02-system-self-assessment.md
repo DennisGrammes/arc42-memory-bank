@@ -1,7 +1,7 @@
 # 🔄 OPTIMIZATION ROUND 2: SYSTEM SELF-ASSESSMENT
 
 ## 🚨 Key Issues Identified
-1. Inconsistent task status updates between .cursorrules and activeContext.md
+1. Inconsistent task status updates between .github/instructions and activeContext.md
 2. Section tracking list not consistently updated
 3. Example files not being explicitly referenced
 4. Context limitations when working with multiple files

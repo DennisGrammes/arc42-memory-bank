@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Pytest",
+      "type": "shell",
+      "command": "pytest",
+      "group": "test"
+    },
+    {
+      "label": "Dotnet Build",
+      "type": "shell",
+      "command": "dotnet build",
+      "group": "build"
+    },
+    {
+      "label": "Dotnet Test",
+      "type": "shell",
+      "command": "dotnet test",
+      "group": "test"
+    },
+    {
+      "label": "NPM Build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build"
+    },
+    {
+      "label": "NPM Test",
+      "type": "shell",
+      "command": "npm test",
+      "group": "test"
+    },
+    {
+      "label": "NPM Dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": "$tsc-watch"
+    },
+    {
+      "label": "TypeScript Check",
+      "type": "shell",
+      "command": "npx tsc --noEmit --skipLibCheck",
+      "group": "test"
+    }
+  ]
+}

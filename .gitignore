@@ -4,7 +4,6 @@ Thumbs.db
 desktop.ini
 
 # Editor specific files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -68,9 +67,6 @@ pids
 *.seed
 *.pid.lock
 
-# Cursor specific
-.cursor/workspace/ 
+# Copilot specific
+.github/instructions/workspace/ 
 
-#claude.code specific
-.claude/
-CLAUDE.md

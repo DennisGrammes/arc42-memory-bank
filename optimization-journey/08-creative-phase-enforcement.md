@@ -12,13 +12,13 @@ Despite previous improvements to creative phases, real-world feedback revealed t
 
 ## ✅ Key Improvements
 1. **Hard Gateway Implementation**
-   - Created new creative-phase-enforcement.mdc with strict gateway mechanisms
+   - Created new creative-phase-enforcement.md with strict gateway mechanisms
    - Implemented hard implementation blocking without completed creative phases
    - Added explicit verification checklist for creative phase completeness
    - Created formal completion confirmation for creative phases
 
 2. **Workflow Structure Enhancement**
-   - Updated workflow.mdc to include creative phases as explicit workflow step
+   - Updated workflow.md to include creative phases as explicit workflow step
    - Added formal transition markers for creative phases
    - Integrated creative phases as standard part of Level 3-4 workflows
    - Created dedicated creative phase section in tracking lists
@@ -30,7 +30,7 @@ Despite previous improvements to creative phases, real-world feedback revealed t
    - Enhanced implementation reminders to include creative phase requirements
 
 4. **Quality Metrics Framework**
-   - Created new creative-phase-metrics.mdc with objective evaluation criteria
+   - Created new creative-phase-metrics.md with objective evaluation criteria
    - Implemented weighted decision matrices for option comparison
    - Added domain-specific evaluation criteria for different creative phase types
    - Developed risk assessment framework for design decisions
