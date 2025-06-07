@@ -1,3 +1,6 @@
+---
+description: "Legacy QA validation map"
+---
 # VAN MODE: QA TECHNICAL VALIDATION (Pre-BUILD)
 
 > **TL;DR:** This map details the technical validation process executed *after* CREATIVE mode and *before* BUILD mode, triggered by the `VAN QA` command. It ensures dependencies, configuration, environment, and basic build functionality are sound.

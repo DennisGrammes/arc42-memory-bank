@@ -1,3 +1,6 @@
+---
+description: "Task planning for Memory Bank projects"
+---
 # MEMORY BANK PLAN MODE
 
 Create a detailed plan for task execution based on the complexity level determined in the initialization mode.
@@ -125,6 +128,19 @@ read_file({
   target_file: ".github/instructions/rules/isolation_rules/Level4/architectural-planning.md",
   should_read_entire_file: true
 })
+```
+
+### Step 4: INITIALIZE CORE DOCUMENTS
+Ensure `tasks.md` and Memory Bank files exist. Populate missing ones with the initialization description.
+
+```
+ensure_file({ target_file: "tasks.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/projectbrief.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/productContext.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/systemPatterns.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/techContext.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/activeContext.md", content_if_missing: "[project description]" })
+ensure_file({ target_file: "memory-bank/progress.md", content_if_missing: "[project description]" })
 ```
 
 ## PLANNING APPROACH

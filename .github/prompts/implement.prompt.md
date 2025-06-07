@@ -1,3 +1,6 @@
+---
+description: "Implementation of planned changes"
+---
 # MEMORY BANK BUILD MODE
 
 Build the planned changes following the implementation plan and creative phase decisions.

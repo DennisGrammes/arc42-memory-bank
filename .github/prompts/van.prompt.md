@@ -1,3 +1,6 @@
+---
+description: "Initialize Memory Bank and coordinate modes"
+---
 # ADAPTIVE MEMORY-BASED ASSISTANT SYSTEM - ENTRY POINT
 
 > **TL;DR:** Implement a structured Memory Bank system that maintains context across sessions using specialized modes for each development phase.

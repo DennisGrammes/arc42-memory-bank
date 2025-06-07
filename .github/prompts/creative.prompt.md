@@ -1,3 +1,6 @@
+---
+description: "Design and architecture exploration"
+---
 # MEMORY BANK CREATIVE MODE
 
 Perform detailed design and architecture work for components flagged during the planning phase.
