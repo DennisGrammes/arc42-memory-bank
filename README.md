@@ -10,10 +10,11 @@ The Memory Bank workflow divides development into several specialized phases:
 - **PLAN** – Detailed task planning
 - **CREATIVE** – Design and architecture exploration
 - **IMPLEMENT** – Systematic implementation of planned work
+- **QA** – Technical validation and quality assurance
 - **REFLECT** – Review and lessons learned
 - **ARCHIVE** – Final documentation
 
-Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, or `/implement`).
+Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`).
 
 ## Installation
 
@@ -32,11 +33,24 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 
 4. Copy the `.github` folder into the root of your workspace if it is not already there. The `instructions` subfolder contains the rule files referenced by each prompt.
 5. In Copilot Chat, use the provided smart actions to run the workflow:
-   - `/van` – analyze the project and determine complexity
-   - `/plan` – generate an implementation plan
-   - `/creative` – explore design options for complex components
-   - `/implement` – build the planned components
-6. Optionally create `.vscode/tasks.json` with helpful build and test commands:
+   - `/van` – initialize the Memory Bank and analyze existing tasks *(run once when starting a project)*
+   - `/plan` – produce or update the implementation plan *(use after gathering requirements)*
+   - `/creative` – brainstorm design approaches for complex components *(helpful for high complexity work)*
+   - `/implement` – build the planned components *(use iteratively as you code)*
+   - `/qa` – run validation checks to ensure quality *(execute after implementation or whenever needed)*
+   - `/reflect` – review the finished work and capture lessons learned *(run after `/implement` or `/qa` completes)*
+   - `/archive` – finalize documentation once reflection is complete *(triggered by typing `ARCHIVE NOW` during `/reflect`)*
+
+### Example Workflow
+
+1. `/van` – create the Memory Bank for the project
+2. `/plan` – outline the tasks and milestones
+3. `/creative` – explore alternative designs if needed
+4. `/implement` – develop the planned features
+5. `/qa` – validate the implementation and environment
+6. `/reflect` – document successes and lessons
+7. `/archive` – store final documentation and reset context
+8. Optionally create `.vscode/tasks.json` with helpful build and test commands:
 
 ```json
 {
