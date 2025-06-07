@@ -13,7 +13,7 @@ Based on field testing of the Adaptive Memory Bank System across different compl
 
 1. **Enhanced Creative Phase Handling**
    - Add more prominent reminders about creative phase markers
-   - Include creative phase examples in workflow.mdc
+   - Include creative phase examples in workflow.md
    - Create visual indicators for entering/exiting creative phases
    - Add creative checkpoint templates
 

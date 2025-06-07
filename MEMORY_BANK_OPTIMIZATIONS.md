@@ -13,7 +13,7 @@ The hierarchical rule loading system significantly reduces token usage by:
 - Lazy-loading specialized rules only when needed
 - Implementing complexity-based rule selection
 
-**File**: [.cursor/rules/isolation_rules/Core/hierarchical-rule-loading.mdc](/.cursor/rules/isolation_rules/Core/hierarchical-rule-loading.mdc)
+**File**: [.github/instructions/rules/isolation_rules/Core/hierarchical-rule-loading.md](/.github/instructions/rules/isolation_rules/Core/hierarchical-rule-loading.md)
 
 ### 2. Progressive Creative Phase Documentation
 
@@ -24,7 +24,7 @@ The creative phase has been optimized with a progressive documentation approach:
 - Tabular format for efficient comparison of options
 - Complexity-appropriate documentation scaling
 
-**File**: [.cursor/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.mdc](/.cursor/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.mdc)
+**File**: [.github/instructions/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.md](/.github/instructions/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.md)
 
 ### 3. Optimized Mode Transitions
 
@@ -35,7 +35,7 @@ Mode transitions now use a unified context transfer protocol:
 - Rule caching during transitions
 - Efficient handoff between modes
 
-**File**: [.cursor/rules/isolation_rules/Core/mode-transition-optimization.mdc](/.cursor/rules/isolation_rules/Core/mode-transition-optimization.mdc)
+**File**: [.github/instructions/rules/isolation_rules/Core/mode-transition-optimization.md](/.github/instructions/rules/isolation_rules/Core/mode-transition-optimization.md)
 
 ### 4. Level-Specific Workflow Optimization
 
@@ -46,7 +46,7 @@ Each complexity level has been optimized:
 - Consolidated memory bank updates
 - Streamlined verification processes
 
-**Example File**: [.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc)
+**Example File**: [.github/instructions/rules/isolation_rules/Level1/optimized-workflow-level1.md](/.github/instructions/rules/isolation_rules/Level1/optimized-workflow-level1.md)
 
 ### 5. Optimization Integration
 
@@ -56,42 +56,42 @@ Central coordination of all optimizations:
 - Configuration system for fine-tuning
 - Monitoring and metrics for optimization
 
-**File**: [.cursor/rules/isolation_rules/Core/optimization-integration.mdc](/.cursor/rules/isolation_rules/Core/optimization-integration.mdc)
+**File**: [.github/instructions/rules/isolation_rules/Core/optimization-integration.md](/.github/instructions/rules/isolation_rules/Core/optimization-integration.md)
 
 ## 📂 All Files Created or Modified
 
 ### Core System
 
-1. [/.cursor/rules/isolation_rules/main-optimized.mdc](/.cursor/rules/isolation_rules/main-optimized.mdc)
+1. [/.github/instructions/rules/isolation_rules/main-optimized.md](/.github/instructions/rules/isolation_rules/main-optimized.md)
    - New optimized main rule file
    - Implements adaptive complexity model
    - Integrates all optimizations
 
-2. [/.cursor/rules/isolation_rules/Core/hierarchical-rule-loading.mdc](/.cursor/rules/isolation_rules/Core/hierarchical-rule-loading.mdc)
+2. [/.github/instructions/rules/isolation_rules/Core/hierarchical-rule-loading.md](/.github/instructions/rules/isolation_rules/Core/hierarchical-rule-loading.md)
    - New hierarchical rule loading system
    - Implements rule caching and lazy loading
    - Significant token reduction
 
-3. [/.cursor/rules/isolation_rules/Core/mode-transition-optimization.mdc](/.cursor/rules/isolation_rules/Core/mode-transition-optimization.mdc)
+3. [/.github/instructions/rules/isolation_rules/Core/mode-transition-optimization.md](/.github/instructions/rules/isolation_rules/Core/mode-transition-optimization.md)
    - New optimized mode transition protocol
    - Preserves context between modes
    - Reduces transition overhead
 
-4. [/.cursor/rules/isolation_rules/Core/optimization-integration.mdc](/.cursor/rules/isolation_rules/Core/optimization-integration.mdc)
+4. [/.github/instructions/rules/isolation_rules/Core/optimization-integration.md](/.github/instructions/rules/isolation_rules/Core/optimization-integration.md)
    - Coordinates all optimization components
    - Manages dependencies between optimizations
    - Provides monitoring and metrics
 
 ### Level-Specific Optimizations
 
-5. [/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc](/.cursor/rules/isolation_rules/Level1/optimized-workflow-level1.mdc)
+5. [/.github/instructions/rules/isolation_rules/Level1/optimized-workflow-level1.md](/.github/instructions/rules/isolation_rules/Level1/optimized-workflow-level1.md)
    - Streamlined workflow for quick bug fixes
    - Ultra-compact documentation templates
    - Consolidated memory bank updates
 
 ### Phase-Specific Optimizations
 
-6. [/.cursor/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.mdc](/.cursor/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.mdc)
+6. [/.github/instructions/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.md](/.github/instructions/rules/isolation_rules/Phases/CreativePhase/optimized-creative-template.md)
    - Progressive documentation approach
    - Token-efficient templates
    - Complexity-based scaling
@@ -154,7 +154,7 @@ Central coordination of all optimizations:
 
 To use the optimized system:
 
-1. Replace the existing main.mdc with main-optimized.mdc
+1. Replace the existing main.md with main-optimized.md
 2. Add the new optimization files to their respective directories
 3. The system will automatically use the optimized components
 4. No additional configuration required

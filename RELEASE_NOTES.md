@@ -1,6 +1,6 @@
 # Memory Bank System Release Notes
 
-> **Personal Note**: Memory Bank is my personal hobby project that I develop for my own use in coding projects. As this is a personal project, I don't maintain an issues tracker or actively collect feedback. However, if you're using these rules and encounter issues, one of the great advantages is that you can ask the Cursor AI directly to modify or update the rules to better suit your specific workflow. The system is designed to be adaptable by the AI, allowing you to customize it for your own needs without requiring external support.
+> **Personal Note**: Memory Bank is my personal hobby project that I develop for my own use in coding projects. As this is a personal project, I don't maintain an issues tracker or actively collect feedback. However, if you're using these rules and encounter issues, one of the great advantages is that you can ask GitHub Copilot Chat directly to modify or update the rules to better suit your specific workflow. The system is designed to be adaptable by the AI, allowing you to customize it for your own needs without requiring external support.
 
 ## Version 0.7-beta - Token-Optimized Workflows
 
@@ -109,11 +109,11 @@ When using Memory Bank, you may occasionally need to guide the agent back to the
 - This release builds upon v0.6-beta.1's architectural foundation
 - Significantly enhances JIT Rule Loading efficiency 
 - No manual migration required
-- New files added to `.cursor/rules/isolation_rules/` directory
+- New files added to `.github/instructions/rules/isolation_rules/` directory
 
 ### 🔧 Requirements
-- Requires Cursor version 0.48 or higher
-- Compatible with Claude 3.7 Sonnet (recommended) and newer models
+- Requires GitHub Copilot enabled in VS Code
+- Compatible with large language models supported by Copilot
 - Compatible with all existing Memory Bank v0.6-beta.1 installations
 
 ### 📈 Optimization Approaches

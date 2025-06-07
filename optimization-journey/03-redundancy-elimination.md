@@ -1,7 +1,7 @@
 # 🔄 OPTIMIZATION ROUND 3: REDUNDANCY ELIMINATION
 
 ## 🚨 Key Issues Identified
-1. Task statuses duplicated across multiple files (.cursorrules, activeContext.md, progress.md)
+1. Task statuses duplicated across multiple files (.github/instructions, activeContext.md, progress.md)
 2. Implementation details duplicated between files
 3. Recent changes information duplicated
 4. Maintenance overhead due to synchronizing information across files
