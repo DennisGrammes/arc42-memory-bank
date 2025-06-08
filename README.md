@@ -15,7 +15,7 @@ The Memory Bank workflow divides development into several specialized phases:
 - **ARCHIVE** – Final documentation
 
 Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`).
-Use the `/scenario` command at any time to generate or update user scenario files.
+`/scenario` – create or update user scenario files.
 
 ## Installation
 
