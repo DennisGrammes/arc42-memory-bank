@@ -23,8 +23,10 @@ Record each scheme's file path in `tasks.md` so every workflow phase can load th
 | **Protocols** | HTTP, gRPC, messaging, etc. |
 | **Internal Capabilities** | Optional list of key services or contexts |
 | **Data Stores** | Databases or persistence layers |
-| **Diagram** | Optional mermaid diagram link |
+| **Diagram** | Mermaid diagram code describing the scheme |
 | **Notes** | Additional context |
+
+Schemes must be defined using Mermaid so the diagram code can be stored directly in the repository and versioned like other documents.
 
 C2 schemes expand **Internal Capabilities** into explicit components and list the protocols between them.
 
