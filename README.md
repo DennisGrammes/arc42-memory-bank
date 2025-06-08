@@ -15,6 +15,7 @@ The Memory Bank workflow divides development into several specialized phases:
 - **ARCHIVE** – Final documentation
 
 Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`).
+`/scenario` – create or update user scenario files.
 
 ## Installation
 
@@ -35,6 +36,7 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 5. In Copilot Chat, use the provided smart actions to run the workflow:
    - `/van` – initialize the Memory Bank and analyze existing tasks *(run once when starting a project)*
    - `/plan` – produce or update the implementation plan *(use after gathering requirements)*
+   - `/scenario` – create or update user scenario files
    - `/creative` – brainstorm design approaches for complex components *(helpful for high complexity work)*
    - `/implement` – build the planned components *(use iteratively as you code)*
    - `/qa` – run validation checks to ensure quality *(execute after implementation or whenever needed)*
@@ -45,12 +47,13 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 
 1. `/van` – create the Memory Bank for the project
 2. `/plan` – outline the tasks and milestones
-3. `/creative` – explore alternative designs if needed
-4. `/implement` – develop the planned features
-5. `/qa` – validate the implementation and environment
-6. `/reflect` – document successes and lessons
-7. `/archive` – store final documentation and reset context
-8. Optionally create `.vscode/tasks.json` with helpful build and test commands:
+3. `/scenario` – document or update user scenarios
+4. `/creative` – explore alternative designs if needed
+5. `/implement` – develop the planned features
+6. `/qa` – validate the implementation and environment
+7. `/reflect` – document successes and lessons
+8. `/archive` – store final documentation and reset context
+9. Optionally create `.vscode/tasks.json` with helpful build and test commands:
 
 ```json
 {
