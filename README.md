@@ -40,7 +40,7 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
    - `/plan` – produce or update the implementation plan *(use after gathering requirements)*
    - `/scenario` – create or update user scenario files
    - `/c1` – document or update a system scheme at detail level C1
-   - `/c2` – document or update a system scheme at detail level C2
+   - `/c2` – document or update a component-level scheme at detail level C2
    - `/creative` – brainstorm design approaches for complex components *(helpful for high complexity work)*
    - `/implement` – build the planned components *(use iteratively as you code)*
    - `/qa` – run validation checks to ensure quality *(execute after implementation or whenever needed)*
@@ -59,7 +59,7 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 8. `/qa` – validate the implementation and environment
 9. `/reflect` – document successes and lessons
 10. `/archive` – store final documentation and reset context
-10. Optionally create `.vscode/tasks.json` with helpful build and test commands:
+11. Optionally create `.vscode/tasks.json` with helpful build and test commands:
 
 ```json
 {

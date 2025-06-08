@@ -78,7 +78,7 @@ graph TD
 
 ## IMPLEMENTATION STEPS
 
-### Step 1: READ TASKS, SCENARIO, SERVICE SCHEME & MAIN RULE
+### Step 1: READ TASKS, SCENARIO, SYSTEM SCHEME & MAIN RULE
 ```
 read_file({
   target_file: "tasks.md",

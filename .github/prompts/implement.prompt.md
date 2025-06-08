@@ -81,7 +81,7 @@ read_file({
 })
 ```
 
-### Step 2: READ TASKS, SCENARIO, SERVICE SCHEME & IMPLEMENTATION PLAN
+### Step 2: READ TASKS, SCENARIO, SYSTEM SCHEME & IMPLEMENTATION PLAN
 ```
 read_file({
   target_file: "tasks.md",

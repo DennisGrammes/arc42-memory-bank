@@ -72,7 +72,7 @@ graph TD
 
 ## IMPLEMENTATION STEPS
 
-### Step 1: READ MAIN RULE, TASKS, SCENARIO & SERVICE SCHEME
+### Step 1: READ MAIN RULE, TASKS, SCENARIO & SYSTEM SCHEME
 ```
 read_file({
   target_file: ".github/instructions/rules/isolation_rules/main.md",
