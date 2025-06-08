@@ -7,7 +7,7 @@ async function main() {
 let hasError = false;
 const files = await glob('**/*.md', { ignore: ['node_modules/**'] });
 for (const file of files) {
-  const text = fs.readFileSync(file, 'utf8');
+  const text = await fs.readFile(file, 'utf8');
   if (text.startsWith('---')) {
     const end = text.indexOf('---', 3);
     if (end !== -1) {
