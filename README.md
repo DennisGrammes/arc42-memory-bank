@@ -18,6 +18,7 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 `/scenario` – create or update user scenario files.
 `/c1` – create or update a system scheme description (level C1).
 `/c2` – create or update a component scheme description (level C2).
+The scheme file paths are recorded in `tasks.md` so every phase can load the correct C1 or C2 diagram.
 
 ## Installation
 

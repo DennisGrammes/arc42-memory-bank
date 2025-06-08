@@ -13,9 +13,10 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START PLANNING"] --> ReadTasks["Read tasks.md<br>Core/task-tracking.md"]
-    
+    ReadTasks --> LoadScheme["Load C1/C2 Scheme"]
+
     %% Complexity Level Determination
-    ReadTasks --> CheckLevel{"Determine<br>Complexity Level"}
+    LoadScheme --> CheckLevel{"Determine<br>Complexity Level"}
     CheckLevel -->|"Level 2"| Level2["LEVEL 2 PLANNING<br>Level2/enhancement-planning.md"]
     CheckLevel -->|"Level 3"| Level3["LEVEL 3 PLANNING<br>Level3/feature-planning.md"]
     CheckLevel -->|"Level 4"| Level4["LEVEL 4 PLANNING<br>Level4/system-planning.md"]
@@ -129,6 +130,7 @@ graph TD
     Fix --> Document
     
     style Start fill:#4da6ff,stroke:#0066cc,color:white
+    style LoadScheme fill:#80bfff,stroke:#4da6ff,color:black
     style POC fill:#4da6ff,stroke:#0066cc,color:white
     style Success fill:#ff5555,stroke:#dd3333,color:white
     style Fix fill:#ff5555,stroke:#dd3333,color:white

@@ -12,6 +12,7 @@ System schemes describe the architecture of the product at two detail levels:
 * **C2** – expands the black box into its internal service components, showing protocols between them and connections to the same external black boxes.
 
 Both scheme levels help coordinate planning and design.
+Record each scheme's file path in `tasks.md` so every workflow phase can load the appropriate diagram.
 
 ## \ud83d\udcc1 System Scheme Template
 | Field | Description |

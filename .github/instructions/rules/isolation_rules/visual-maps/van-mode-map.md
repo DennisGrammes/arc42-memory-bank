@@ -96,6 +96,9 @@ graph TD
     
     MBExists -->|"Yes"| VerifyMB["Verify Memory Bank<br>Contents"]
     MBExists -->|"No"| CreateMB["Create Memory Bank<br>Structure"]
+
+    VerifyMB --> SchemeCheck["Check System Scheme Paths"]
+    CreateMB --> SchemeInit["Create System Scheme Stubs"]
     
     CheckFiles --> CheckDocs["Check Documentation<br>Files"]
     CheckDocs --> DocsExist{"Docs<br>Exist?"}
@@ -103,7 +106,7 @@ graph TD
     DocsExist -->|"Yes"| VerifyDocs["Verify Documentation<br>Structure"]
     DocsExist -->|"No"| CreateDocs["Create Documentation<br>Structure"]
     
-    VerifyMB & CreateMB --> MBCP["Memory Bank<br>Checkpoint"]
+    SchemeCheck & SchemeInit --> MBCP["Memory Bank<br>Checkpoint"]
     VerifyDocs & CreateDocs --> DocsCP["Documentation<br>Checkpoint"]
     
     MBCP & DocsCP --> FileComplete["File Verification<br>Complete"]
@@ -112,6 +115,8 @@ graph TD
     style FileComplete fill:#10b981,stroke:#059669,color:white
     style MBCP fill:#f6546a,stroke:#c30052,color:white
     style DocsCP fill:#f6546a,stroke:#c30052,color:white
+    style SchemeCheck fill:#10b981,stroke:#059669,color:white
+    style SchemeInit fill:#10b981,stroke:#059669,color:white
 ```
 
 ## 🧩 COMPLEXITY DETERMINATION PROCESS

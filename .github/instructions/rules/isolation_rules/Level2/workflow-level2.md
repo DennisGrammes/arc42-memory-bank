@@ -292,8 +292,9 @@ graph TD
     Workflow --> AC["Update<br>activeContext.md"]
     Workflow --> TM["Maintain<br>tasks.md"]
     Workflow --> PM["Update<br>progress.md"]
-    
-    PB & AC & TM & PM --> MB["Memory Bank<br>Integration"]
+    Workflow --> SC["Update<br>C1/C2 Scheme"]
+
+    PB & AC & TM & PM & SC --> MB["Memory Bank<br>Integration"]
     MB --> NextTask["Transition to<br>Next Task"]
 ```
 
