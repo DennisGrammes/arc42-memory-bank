@@ -5,6 +5,8 @@ description: "Quality assurance for Memory Bank tasks"
 
 Perform comprehensive quality assurance checks to verify code integrity and documentation consistency at any phase of development.
 
+Load the scenario referenced in `tasks.md` and ensure every acceptance criterion is validated.
+
 ```mermaid
 graph TD
     Start["🚀 START QA MODE"] --> LoadMap["🗺️ Load QA Map<br>.github/instructions/rules/isolation_rules/visual-maps/qa-mode-map.md"]
