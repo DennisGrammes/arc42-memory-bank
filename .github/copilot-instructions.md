@@ -22,7 +22,7 @@ The Memory Bank lives entirely under the `memory-bank/` directory. Never create 
 - `memory-bank/reflection/reflection-[task].md` – reflection notes.
 - `memory-bank/archive/archive-[task].md` – finalized documentation.
 
-Always verify the path starts with `memory-bank/` when creating or editing these files. `tasks.md` is cleared once archived, so keep it as a short-term checklist only.
+Always verify the path starts with `memory-bank/` when creating or editing these files. If a core file does not yet exist, use `create_file` at the same location. `tasks.md` is cleared once archived, so keep it as a short-term checklist only.
 
 ## 3. Workflow Phases
 Trigger phases using Copilot Chat smart actions:
