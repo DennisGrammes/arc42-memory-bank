@@ -51,7 +51,7 @@ graph TD
     %% Completion & Transition
     L1Update & L2Update & L34Update --> CreateReflection["Create<br>reflection.md"]
     CreateReflection --> UpdateSystem["Update System<br>Documentation"]
-    UpdateSystem --> Transition["Prompt User:<br>Type 'ARCHIVE NOW' to load ARCHIVE MODE"]
+    UpdateSystem --> Transition["Prompt User:<br>Type `ARCHIVE NOW` to load ARCHIVE MODE"]
 ```
 
 ## 📋 REFLECTION STRUCTURE

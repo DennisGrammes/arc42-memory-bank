@@ -24,7 +24,7 @@ graph TD
     DocImprovements --> UpdateTasks["📝 Update tasks.md<br>with Reflection Status"]
     UpdateTasks --> CreateReflectDoc["📄 Create reflection.md"]
     CreateReflectDoc --> ReflectComplete["🏁 REFLECTION COMPLETE"]
-    ReflectComplete --> PromptArchive["💬 Prompt User:<br>Type 'ARCHIVE NOW' to proceed"]
+    ReflectComplete --> PromptArchive["💬 Prompt User:<br>Type `ARCHIVE NOW` to proceed"]
 
     %% Styling
     style Start fill:#d9b3ff,stroke:#b366ff,color:black
@@ -84,7 +84,7 @@ read_file({
 - reflection.md created? [YES/NO]
 - tasks.md updated with reflection status? [YES/NO]
 
-→ If all YES: Reflection complete. Prompt user: "Type 'ARCHIVE NOW' to proceed with archiving."
+→ If all YES: Reflection complete. Prompt user: "Type `ARCHIVE NOW` to proceed with archiving."
 → If any NO: Guide user to complete missing reflection elements.
 
 ### MODE TRANSITION
@@ -101,7 +101,7 @@ Exit: After successful reflection, the user triggers ARCHIVE mode by typing `ARC
 ```
 ┌─────────────────────────────────────────────────────┐
 │ I WILL guide the REFLECTION process.                │
-│ I WILL prompt the user to type 'ARCHIVE NOW'        │
+│ I WILL prompt the user to type `ARCHIVE NOW`        │
 │ when reflection is complete.                        │
 │ I WILL maintain tasks.md as the single source of    │
 │ truth for reflection status.                        │
