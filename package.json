@@ -4,7 +4,7 @@
   "description": "Memory Bank is a token-optimized, hierarchical task management system for software projects. The system now integrates with **GitHub Copilot** using instruction and prompt files so that Copilot can guide development through distinct phases.",
   "main": "index.js",
   "scripts": {
-    "lint:md": "markdownlint '**/*.md' --ignore node_modules --ignore optimization-journey --ignore creative_mode_think_tool.md --ignore MEMORY_BANK_OPTIMIZATIONS.md --ignore memory_bank_upgrade_guide.md --ignore RELEASE_NOTES.md",
+    "lint:md": "markdownlint '**/*.md' --ignore 'node_modules/**'",
     "lint:yaml": "node scripts/check-yaml-frontmatter.js",
     "test": "npm run lint:md && npm run lint:yaml"
   },
