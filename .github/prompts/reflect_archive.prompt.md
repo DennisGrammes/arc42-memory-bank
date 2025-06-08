@@ -115,7 +115,7 @@ read_file({
 ## DEFAULT BEHAVIOR: REFLECTION
 When this mode is activated, it defaults to the REFLECTION process. Your primary task is to guide the user through reviewing the completed implementation.  
 Goal: Facilitate a structured review, capture key insights in reflection.md, and update tasks.md to reflect completion of the reflection phase.
-Load the scenario referenced in `tasks.md` and note how the implementation met or diverged from it.
+Load the scenario and the referenced system scheme (C1 or C2) from `tasks.md` and note how the implementation met or diverged from it.
 
 ```mermaid
 graph TD

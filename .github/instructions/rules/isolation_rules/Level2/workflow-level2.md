@@ -274,6 +274,16 @@ Ensure every phase references the user scenario:
 5. Reflection compares results to scenario expectations
 6. Archiving updates scenario status
 
+## \ud83d\udd17 SYSTEM SCHEME C1/C2 INTEGRATION
+
+Maintain system schemes for architectural context:
+
+1. Scheme paths (C1 and C2) recorded during initialization
+2. Planning references the appropriate scheme for design alignment
+3. Creative and Implement phases load scheme details
+4. QA verifies interfaces and dependencies
+5. Reflection logs any scheme updates
+
 ## 🔄 INTEGRATION WITH MEMORY BANK
 
 ```mermaid

@@ -81,7 +81,7 @@ read_file({
 })
 ```
 
-### Step 2: READ TASKS, SCENARIO & IMPLEMENTATION PLAN
+### Step 2: READ TASKS, SCENARIO, SERVICE SCHEME & IMPLEMENTATION PLAN
 ```
 read_file({
   target_file: "tasks.md",
@@ -90,6 +90,11 @@ read_file({
 
 read_file({
   target_file: "[scenario file path from tasks.md]",
+  should_read_entire_file: true
+})
+
+read_file({
+  target_file: "[system scheme path from tasks.md (C1 or C2)]",
   should_read_entire_file: true
 })
 

@@ -167,6 +167,7 @@ graph TD
 
 ## SCENARIO HANDLING
 If `tasks.md` lacks a scenario path, trigger `/scenario` to create a stub and record the location. Always read the referenced scenario file for context.
+If `tasks.md` lacks a system scheme path, trigger `/c1` or `/c2` to create the appropriate description and record the location.
 
 ## MEMORY BANK FILE STRUCTURE
 

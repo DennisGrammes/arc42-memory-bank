@@ -16,6 +16,8 @@ The Memory Bank workflow divides development into several specialized phases:
 
 Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`).
 `/scenario` – create or update user scenario files.
+`/c1` – create or update a system scheme description (level C1).
+`/c2` – create or update a component scheme description (level C2).
 
 ## Installation
 
@@ -37,6 +39,8 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
    - `/van` – initialize the Memory Bank and analyze existing tasks *(run once when starting a project)*
    - `/plan` – produce or update the implementation plan *(use after gathering requirements)*
    - `/scenario` – create or update user scenario files
+   - `/c1` – document or update a system scheme at detail level C1
+   - `/c2` – document or update a system scheme at detail level C2
    - `/creative` – brainstorm design approaches for complex components *(helpful for high complexity work)*
    - `/implement` – build the planned components *(use iteratively as you code)*
    - `/qa` – run validation checks to ensure quality *(execute after implementation or whenever needed)*
@@ -48,12 +52,14 @@ Each phase has an associated prompt file in `.github/prompts` and can be trigger
 1. `/van` – create the Memory Bank for the project
 2. `/plan` – outline the tasks and milestones
 3. `/scenario` – document or update user scenarios
-4. `/creative` – explore alternative designs if needed
-5. `/implement` – develop the planned features
-6. `/qa` – validate the implementation and environment
-7. `/reflect` – document successes and lessons
-8. `/archive` – store final documentation and reset context
-9. Optionally create `.vscode/tasks.json` with helpful build and test commands:
+4. `/c1` – generate the system scheme
+5. `/c2` – generate the component scheme
+6. `/creative` – explore alternative designs if needed
+7. `/implement` – develop the planned features
+8. `/qa` – validate the implementation and environment
+9. `/reflect` – document successes and lessons
+10. `/archive` – store final documentation and reset context
+10. Optionally create `.vscode/tasks.json` with helpful build and test commands:
 
 ```json
 {
