@@ -51,7 +51,7 @@ graph TD
     %% Completion & Transition
     L1Update & L2Update & L34Update --> CreateReflection["Create<br>reflection.md"]
     CreateReflection --> UpdateSystem["Update System<br>Documentation"]
-    UpdateSystem --> Transition["NEXT MODE:<br>ARCHIVE MODE"]
+    UpdateSystem --> Transition["Prompt User:<br>Type `ARCHIVE NOW` to load ARCHIVE MODE"]
 ```
 
 ## 📋 REFLECTION STRUCTURE
@@ -228,4 +228,5 @@ When reflection is complete, notify user with:
 ✅ tasks.md updated with reflection status
 
 → NEXT RECOMMENDED MODE: ARCHIVE MODE
+→ Type `ARCHIVE NOW` to begin archiving
 ``` 

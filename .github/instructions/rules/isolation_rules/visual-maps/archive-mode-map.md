@@ -6,7 +6,7 @@ alwaysApply: false
 
 # ARCHIVE MODE: TASK DOCUMENTATION PROCESS MAP
 
-> **TL;DR:** This visual map guides the ARCHIVE mode process, focusing on creating comprehensive documentation of the completed task, archiving relevant files, and updating the Memory Bank for future reference.
+> **TL;DR:** This visual map guides the ARCHIVE mode process, focusing on creating comprehensive documentation of the completed task, archiving relevant files, and updating the Memory Bank for future reference. Archive mode is triggered when the user types `ARCHIVE NOW` in Reflect mode.
 
 ## 🧭 ARCHIVE MODE PROCESS FLOW
 

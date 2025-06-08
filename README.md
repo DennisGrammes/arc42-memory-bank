@@ -14,7 +14,7 @@ The Memory Bank workflow divides development into several specialized phases:
 - **REFLECT** – Review and lessons learned
 - **ARCHIVE** – Final documentation
 
-Each phase has an associated prompt file in `.github/prompts` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`).
+Each phase has a dedicated prompt file in `.github/prompts/[mode].prompt.md` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`). When `/reflect` is complete, type `ARCHIVE NOW` to load `/archive`.
 `/scenario` – create or update user scenario files.
 `/c1` – create or update a system scheme description (level C1).
 `/c2` – create or update a component scheme description (level C2).
