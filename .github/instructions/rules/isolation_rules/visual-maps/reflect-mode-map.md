@@ -13,9 +13,10 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START REFLECT MODE"] --> ReadTasks["Read tasks.md<br>and progress.md"]
-    
+    ReadTasks --> LoadScheme["Load C1/C2 Scheme"]
+
     %% Initial Assessment
-    ReadTasks --> VerifyImplement{"Implementation<br>Complete?"}
+    LoadScheme --> VerifyImplement{"Implementation<br>Complete?"}
     VerifyImplement -->|"No"| ReturnImplement["Return to<br>IMPLEMENT Mode"]
     VerifyImplement -->|"Yes"| AssessLevel{"Determine<br>Complexity Level"}
     
@@ -40,7 +41,8 @@ graph TD
     %% Level 3-4 Reflection (Comprehensive)
     L3Reflect & L4Reflect --> L34Review["Review Implementation<br>& Creative Phases"]
     L34Review --> L34Plan["Compare Against<br>Original Plan"]
-    L34Plan --> L34WWW["Document<br>What Went Well"]
+    L34Plan --> L34CompareScheme["Compare to System Scheme"]
+    L34CompareScheme --> L34WWW["Document<br>What Went Well"]
     L34WWW --> L34Challenges["Document<br>Challenges"]
     L34Challenges --> L34Lessons["Document<br>Lessons Learned"]
     L34Lessons --> L34ImproveProcess["Document Process<br>Improvements"]

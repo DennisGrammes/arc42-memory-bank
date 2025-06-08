@@ -13,9 +13,10 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START BUILD MODE"] --> ReadDocs["Read Reference Documents<br>Core/command-execution.md"]
-    
+    ReadDocs --> LoadScheme["Load C1/C2 Scheme"]
+
     %% Initialization
-    ReadDocs --> CheckLevel{"Determine<br>Complexity Level<br>from tasks.md"}
+    LoadScheme --> CheckLevel{"Determine<br>Complexity Level<br>from tasks.md"}
     
     %% Level 1 Implementation
     CheckLevel -->|"Level 1<br>Quick Bug Fix"| L1Process["LEVEL 1 PROCESS<br>Level1/quick-bug-workflow.md"]
