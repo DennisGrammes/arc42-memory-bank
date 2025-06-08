@@ -72,7 +72,7 @@ graph TD
 
 ## IMPLEMENTATION STEPS
 
-### Step 1: READ MAIN RULE & TASKS
+### Step 1: READ MAIN RULE, TASKS & SCENARIO
 ```
 read_file({
   target_file: ".github/instructions/rules/isolation_rules/main.md",
@@ -81,6 +81,11 @@ read_file({
 
 read_file({
   target_file: "tasks.md",
+  should_read_entire_file: true
+})
+
+read_file({
+  target_file: "[scenario file path from tasks.md]",
   should_read_entire_file: true
 })
 ```

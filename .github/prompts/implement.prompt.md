@@ -81,10 +81,15 @@ read_file({
 })
 ```
 
-### Step 2: READ TASKS & IMPLEMENTATION PLAN
+### Step 2: READ TASKS, SCENARIO & IMPLEMENTATION PLAN
 ```
 read_file({
   target_file: "tasks.md",
+  should_read_entire_file: true
+})
+
+read_file({
+  target_file: "[scenario file path from tasks.md]",
   should_read_entire_file: true
 })
 

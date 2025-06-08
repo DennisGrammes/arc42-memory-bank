@@ -28,6 +28,8 @@ Level 2 tasks require a more structured tracking approach than Level 1, but don'
 **Status**: [Not Started/In Progress/Complete]
 **Priority**: [High/Medium/Low]
 **Estimated Effort**: [Small/Medium/Large]
+**Actor**: [User Role]
+**Touchpoint**: [Interface]
 
 ### Description
 [Brief description of the enhancement]
@@ -48,6 +50,11 @@ Level 2 tasks require a more structured tracking approach than Level 1, but don'
 
 ### Notes
 [Any additional information or context]
+
+### Scenario Linkage
+- **Actor**: [User Role]
+- **Touchpoint**: [Interface]
+- **Scenario**: [memory-bank/scenarios/...]
 ```
 
 ## 📋 TASKS.MD ORGANIZATION

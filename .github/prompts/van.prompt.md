@@ -165,6 +165,9 @@ graph TD
     style UseCorrectFn fill:#8cff8c,stroke:#4dbb5f,color:black
 ```
 
+## SCENARIO HANDLING
+If `tasks.md` lacks a scenario path, trigger `/scenario` to create a stub and record the location. Always read the referenced scenario file for context.
+
 ## MEMORY BANK FILE STRUCTURE
 
 ```mermaid

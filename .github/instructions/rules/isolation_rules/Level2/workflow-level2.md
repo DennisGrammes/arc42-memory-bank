@@ -46,7 +46,8 @@ graph TD
 2. Critical file verification
 3. Memory Bank structure loading
 4. Task creation in tasks.md
-5. Initial task scope definition
+5. Link scenario file in tasks.md
+6. Initial task scope definition
 
 **Milestone Checkpoint:**
 ```
@@ -261,6 +262,17 @@ graph TD
     L1Trigger --> L1Switch["Switch to<br>Level 1 Workflow"]
     L34Trigger --> L34Switch["Switch to<br>Level 3/4 Workflow"]
 ```
+
+## 🔗 USER SCENARIO INTEGRATION
+
+Ensure every phase references the user scenario:
+
+1. Scenario file linked during initialization
+2. Planning verifies Actor and Touchpoint
+3. Creative and Implement phases load scenario details
+4. QA checks acceptance criteria
+5. Reflection compares results to scenario expectations
+6. Archiving updates scenario status
 
 ## 🔄 INTEGRATION WITH MEMORY BANK
 

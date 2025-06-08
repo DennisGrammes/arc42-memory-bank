@@ -1,0 +1,21 @@
+{
+  "name": "copilot-memory-bank",
+  "version": "1.0.0",
+  "description": "Memory Bank is a token-optimized, hierarchical task management system for software projects. The system now integrates with **GitHub Copilot** using instruction and prompt files so that Copilot can guide development through distinct phases.",
+  "main": "index.js",
+  "scripts": {
+    "lint:md": "markdownlint '**/*.md' --ignore 'node_modules/**'",
+    "lint:yaml": "node scripts/check-yaml-frontmatter.js",
+    "test": "npm run lint:md && npm run lint:yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "glob": "^11.0.2",
+    "js-yaml": "^4.1.0",
+    "markdownlint": "^0.38.0",
+    "markdownlint-cli": "^0.45.0"
+  }
+}
