@@ -13,7 +13,7 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START PLANNING"] --> ReadTasks["Read tasks.md<br>Core/task-tracking.md"]
-    ReadTasks --> LoadScheme["Load C1/C2 Scheme"]
+    ReadTasks --> LoadScheme["Load Architecture Documentation"]
 
     %% Complexity Level Determination
     LoadScheme --> CheckLevel{"Determine<br>Complexity Level"}

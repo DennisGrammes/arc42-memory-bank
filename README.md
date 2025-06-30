@@ -16,9 +16,9 @@ The Memory Bank workflow divides development into several specialized phases:
 
 Each phase has a dedicated prompt file in `.github/prompts/[mode].prompt.md` and can be triggered from Copilot Chat via a smart action (`/van`, `/plan`, `/creative`, `/implement`, `/qa`, `/reflect`, or `/archive`). When `/reflect` is complete, type `ARCHIVE NOW` to load `/archive`.
 `/scenario` – create or update user scenario files.
-`/c1` – create or update a system scheme description (level C1).
-`/c2` – create or update a component scheme description (level C2).
-The scheme file paths are recorded in `tasks.md` so every phase can load the correct C1 or C2 diagram.
+`/context` – create or update system context documentation (arc42 Section 3).
+`/blocks` – create or update building block view documentation (arc42 Section 5).
+The architecture documentation file paths are recorded in `tasks.md` so every phase can load the correct system context or building block documentation.
 
 ## Installation
 
@@ -40,8 +40,8 @@ The scheme file paths are recorded in `tasks.md` so every phase can load the cor
    - `/van` – initialize the Memory Bank and analyze existing tasks *(run once when starting a project)*
    - `/plan` – produce or update the implementation plan *(use after gathering requirements)*
    - `/scenario` – create or update user scenario files
-   - `/c1` – document or update a system scheme at detail level C1
-   - `/c2` – document or update a component-level scheme at detail level C2
+   - `/context` – document or update system context (arc42 Section 3)
+   - `/blocks` – document or update building block view (arc42 Section 5)
    - `/creative` – brainstorm design approaches for complex components *(helpful for high complexity work)*
    - `/implement` – build the planned components *(use iteratively as you code)*
    - `/qa` – run validation checks to ensure quality *(execute after implementation or whenever needed)*
@@ -53,8 +53,8 @@ The scheme file paths are recorded in `tasks.md` so every phase can load the cor
 1. `/van` – create the Memory Bank for the project
 2. `/plan` – outline the tasks and milestones
 3. `/scenario` – document or update user scenarios
-4. `/c1` – generate the system scheme
-5. `/c2` – generate the component scheme
+4. `/context` – generate the system context documentation
+5. `/blocks` – generate the building block view documentation
 6. `/creative` – explore alternative designs if needed
 7. `/implement` – develop the planned features
 8. `/qa` – validate the implementation and environment

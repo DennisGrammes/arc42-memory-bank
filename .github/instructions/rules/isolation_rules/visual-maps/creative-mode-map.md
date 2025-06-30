@@ -13,7 +13,7 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START CREATIVE MODE"] --> ReadTasks["Read tasks.md<br>For Creative Requirements"]
-    ReadTasks --> LoadScheme["Load C1/C2 Scheme"]
+    ReadTasks --> LoadScheme["Load Architecture Documentation"]
 
     %% Initial Assessment
     LoadScheme --> VerifyPlan{"Plan Complete<br>& Creative Phases<br>Identified?"}

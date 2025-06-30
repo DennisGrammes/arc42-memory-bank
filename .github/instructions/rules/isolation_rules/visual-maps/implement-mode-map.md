@@ -13,7 +13,7 @@ alwaysApply: false
 ```mermaid
 graph TD
     Start["START BUILD MODE"] --> ReadDocs["Read Reference Documents<br>Core/command-execution.md"]
-    ReadDocs --> LoadScheme["Load C1/C2 Scheme"]
+    ReadDocs --> LoadScheme["Load Architecture Documentation"]
 
     %% Initialization
     LoadScheme --> CheckLevel{"Determine<br>Complexity Level<br>from tasks.md"}

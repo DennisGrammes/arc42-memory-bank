@@ -78,7 +78,7 @@ graph TD
 
 ## IMPLEMENTATION STEPS
 
-### Step 1: READ TASKS, SCENARIO, SYSTEM SCHEME & MAIN RULE
+### Step 1: READ TASKS, SCENARIO, ARCHITECTURE DOCUMENTATION & MAIN RULE
 ```
 read_file({
   target_file: "tasks.md",
@@ -91,7 +91,7 @@ read_file({
 })
 
 read_file({
-  target_file: "[system scheme path from tasks.md (C1 or C2)]",
+  target_file: "[architecture documentation path from tasks.md (System Context or Building Blocks)]",
   should_read_entire_file: true
 })
 

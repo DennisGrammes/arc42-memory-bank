@@ -25,7 +25,7 @@ graph TD
     UniversalChecks --> MemoryBankCheck["1️⃣ MEMORY BANK VERIFICATION<br>Check consistency & updates"]
     MemoryBankCheck --> TaskTrackingCheck["2️⃣ TASK TRACKING VERIFICATION<br>Validate tasks.md as source of truth"]
     TaskTrackingCheck --> ReferenceCheck["3️⃣ REFERENCE VALIDATION<br>Verify cross-references between docs"]
-    ReferenceCheck --> SchemeCheck["4️⃣ SYSTEM SCHEME VALIDATION"]
+    ReferenceCheck --> ArchCheck["4️⃣ ARCHITECTURE VALIDATION"]
 
     %% Phase-specific validations feed into comprehensive report
     VANChecks & PLANChecks & CREATIVEChecks & IMPLEMENTChecks --> PhaseSpecificResults["Phase-Specific Results"]

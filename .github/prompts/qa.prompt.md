@@ -5,7 +5,7 @@ description: "Quality assurance for Memory Bank tasks"
 
 Perform comprehensive quality assurance checks to verify code integrity and documentation consistency at any phase of development.
 
-Load the scenario and the referenced system scheme (C1 or C2) from `tasks.md` and ensure every acceptance criterion is validated.
+Load the scenario and the referenced architecture documentation (System Context or Building Blocks) from `tasks.md` and ensure every acceptance criterion is validated.
 
 ```mermaid
 graph TD

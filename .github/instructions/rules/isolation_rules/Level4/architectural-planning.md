@@ -507,47 +507,55 @@ flowchart TD
     class LB,W1,W2,A1,A2,DB component
 ```
 
-### Architecture Documentation Template
+### Architecture Documentation Template (arc42 Structure)
 
 ```markdown
-# System Architecture Document
+# Architecture Documentation (arc42 Template)
 
-## 1. Introduction
-- **Purpose**: [Purpose of the architecture]
-- **Scope**: [Scope of the architecture]
-- **Audience**: [Intended audience for the document]
-- **References**: [Related documents and references]
+## 1. Introduction and Goals (arc42 Section 1)
+- **Requirements Overview**: [Purpose of the system]
+- **Quality Goals**: [Key quality requirements]
+- **Stakeholders**: [Overview of stakeholders and their concerns]
 
-## 2. System Context
-- **System Purpose**: [Brief description of system purpose]
-- **Context Diagram**: [System context diagram]
-- **External Systems**: [Description of external systems and interfaces]
-- **User Types**: [Description of user types and interactions]
+## 2. Architecture Constraints (arc42 Section 2)
+- **Technical Constraints**: [Technical constraints and requirements]
+- **Organizational Constraints**: [Organizational and process constraints]
+- **Conventions**: [Programming and architecture conventions]
 
-## 3. Architecture Overview
-- **Architecture Style**: [Description of the architectural style/pattern]
-- **High-Level Architecture**: [High-level architecture diagram]
-- **Key Components**: [Overview of key components]
-- **Technology Stack**: [Overview of technology stack]
+## 3. System Scope and Context (arc42 Section 3)
+- **Business Context**: [Business context diagram and external interfaces]
+- **Technical Context**: [Technical context showing technical interfaces]
 
-## 4. Component Architecture
-- **Component Diagram**: [Component architecture diagram]
-- **Component Descriptions**:
-  - Component 1: [Description, responsibilities, interfaces]
-  - Component 2: [Description, responsibilities, interfaces]
-  - Component 3: [Description, responsibilities, interfaces]
-- **Component Interactions**: [Description of component interactions]
-- **API Specifications**: [Overview of key APIs]
+## 4. Solution Strategy (arc42 Section 4)
+- **Technology Decisions**: [Key technology decisions and rationale]
+- **Top-level Decomposition**: [Fundamental system decomposition]
+- **Approaches for Quality Goals**: [How quality goals are achieved]
 
-## 5. Data Architecture
-- **Data Model**: [Data architecture diagram]
-- **Entity Descriptions**:
-  - Entity 1: [Description, attributes, relationships]
-  - Entity 2: [Description, attributes, relationships]
-  - Entity 3: [Description, attributes, relationships]
-- **Data Storage**: [Description of data storage approaches]
-- **Data Access**: [Description of data access patterns]
-- **Data Migration**: [Overview of data migration approach]
+## 5. Building Block View (arc42 Section 5)
+- **Whitebox Overall System**: [Top-level building blocks]
+- **Level 1**: [Component descriptions and interfaces]
+- **Level 2**: [Detailed building block decomposition if needed]
+
+## 6. Runtime View (arc42 Section 6)
+- **Runtime Scenarios**: [Key runtime scenarios and interactions]
+- **Important Business Processes**: [Business process flows]
+
+## 7. Deployment View (arc42 Section 7)
+- **Infrastructure**: [Infrastructure and deployment]
+- **Mapping of Building Blocks**: [How building blocks map to infrastructure]
+
+## 8. Cross-cutting Concepts (arc42 Section 8)
+- **Domain Concepts**: [Key domain concepts]
+- **Security Concepts**: [Security approach and concepts]
+- **Safety and Reliability**: [Reliability and availability concepts]
+
+## 10. Quality Requirements (arc42 Section 10)
+- **Quality Tree**: [Quality goals with scenarios]
+- **Quality Scenarios**: [Detailed quality scenarios]
+
+## 11. Risks and Technical Debts (arc42 Section 11)
+- **Risks**: [Known risks and mitigation strategies]
+- **Technical Debts**: [Technical debts and planned resolution]
 
 ## 6. Security Architecture
 - **Security Model**: [Security architecture diagram]
@@ -742,13 +750,13 @@ Alternatives Exploration
 - Advantages and disadvantages documented? [YES/NO]
 - Recommended approach justified? [YES/NO]
 
-Architecture Documentation
-- System context documented? [YES/NO]
-- High-level architecture documented? [YES/NO]
-- Component architecture documented? [YES/NO]
-- Data architecture documented? [YES/NO]
-- Security architecture documented? [YES/NO]
-- Deployment architecture documented? [YES/NO]
+Architecture Documentation (arc42)
+- System context documented (Section 3)? [YES/NO]
+- Building block view documented (Section 5)? [YES/NO]
+- Solution strategy documented (Section 4)? [YES/NO]
+- Quality requirements defined (Section 10)? [YES/NO]
+- Runtime view documented (Section 6)? [YES/NO]
+- Deployment view documented (Section 7)? [YES/NO]
 
 Architecture Validation
 - Requirements coverage validated? [YES/NO]
@@ -763,21 +771,21 @@ Memory Bank Integration
 - techContext.md updated? [YES/NO]
 ```
 
-## 📋 MINIMAL MODE ARCHITECTURE PLANNING FORMAT
+## 📋 MINIMAL MODE ARCHITECTURE PLANNING FORMAT (arc42)
 
 For situations requiring a more compact architectural planning approach:
 
 ```markdown
 ## Level 4 Architecture Planning: [System Name]
 
-### System Context
+### System Context (arc42 Section 3)
 - **Purpose**: [Brief description of system purpose]
-- **Users**: [Primary users]
-- **External Systems**: [Key external systems]
+- **Business Context**: [Key business stakeholders]
+- **Technical Context**: [Key technical interfaces]
 
-### Key Architectural Decisions
-- **Architecture Style**: [Chosen style with brief rationale]
-- **Component Structure**: [Key components with brief descriptions]
+### Key Architectural Decisions (arc42 Section 4)
+- **Solution Strategy**: [Chosen approach with brief rationale]
+- **Building Blocks**: [Key building blocks with brief descriptions]
 - **Data Model**: [Brief description of data approach]
 - **Technical Stack**: [Key technologies]
 

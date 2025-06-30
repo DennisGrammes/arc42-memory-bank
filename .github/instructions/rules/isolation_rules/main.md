@@ -153,4 +153,4 @@ grep "TODO" $(find . -name "*.js")
 npm install && npm start
 ```
 
-Refer to [command-execution.md](./github/instructions/rules/isolation_rules/Core/command-execution.md) for detailed guidance. 
+Refer to [command-execution.md](./.github/instructions/rules/isolation_rules/Core/command-execution.md) for detailed guidance. 

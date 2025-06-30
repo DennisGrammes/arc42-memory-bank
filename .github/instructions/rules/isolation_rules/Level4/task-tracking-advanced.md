@@ -293,10 +293,10 @@ pie title System Progress
 ```mermaid
 graph TD
     subgraph Progress
-    C1[Component 1: 75%]
-    C2[Component 2: 50%]
-    C3[Component 3: 20%]
-    C4[Component 4: 5%]
+    Comp1[Component 1: 75%]
+    Comp2[Component 2: 50%]
+    Comp3[Component 3: 20%]
+    Comp4[Component 4: 5%]
     end
 ```
 
@@ -311,14 +311,14 @@ gantt
     Architecture Review    :done, arch-rev, after arch, 10d
     
     section Component 1
-    Design                 :active, c1-des, after arch-rev, 20d
-    Implementation         :c1-imp, after c1-des, 40d
-    Testing                :c1-test, after c1-imp, 15d
+    Design                 :active, comp1-des, after arch-rev, 20d
+    Implementation         :comp1-imp, after comp1-des, 40d
+    Testing                :comp1-test, after comp1-imp, 15d
     
     section Component 2
-    Design                 :active, c2-des, after arch-rev, 25d
-    Implementation         :c2-imp, after c2-des, 50d
-    Testing                :c2-test, after c2-imp, 20d
+    Design                 :active, comp2-des, after arch-rev, 25d
+    Implementation         :comp2-imp, after comp2-des, 50d
+    Testing                :comp2-test, after comp2-imp, 20d
 ```
 ```
 

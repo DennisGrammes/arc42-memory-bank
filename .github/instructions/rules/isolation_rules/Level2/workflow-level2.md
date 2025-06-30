@@ -274,15 +274,15 @@ Ensure every phase references the user scenario:
 5. Reflection compares results to scenario expectations
 6. Archiving updates scenario status
 
-## \ud83d\udd17 SYSTEM SCHEME C1/C2 INTEGRATION
+## 🔗 ARCHITECTURE DOCUMENTATION INTEGRATION
 
-Maintain system schemes for architectural context:
+Maintain architecture documentation for context:
 
-1. Scheme paths (C1 and C2) recorded during initialization
-2. Planning references the appropriate scheme for design alignment
-3. Creative and Implement phases load scheme details
+1. Architecture documentation paths recorded during initialization
+2. Planning references the appropriate documentation for design alignment
+3. Creative and Implement phases load architecture details
 4. QA verifies interfaces and dependencies
-5. Reflection logs any scheme updates
+5. Reflection logs any documentation updates
 
 ## 🔄 INTEGRATION WITH MEMORY BANK
 
@@ -292,7 +292,7 @@ graph TD
     Workflow --> AC["Update<br>activeContext.md"]
     Workflow --> TM["Maintain<br>tasks.md"]
     Workflow --> PM["Update<br>progress.md"]
-    Workflow --> SC["Update<br>C1/C2 Scheme"]
+    Workflow --> SC["Update Architecture<br>Documentation"]
 
     PB & AC & TM & PM & SC --> MB["Memory Bank<br>Integration"]
     MB --> NextTask["Transition to<br>Next Task"]

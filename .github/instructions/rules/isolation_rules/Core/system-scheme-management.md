@@ -1,53 +1,55 @@
 ---
-description: "Guidelines for managing system schemes in the Memory Bank"
+description: "Guidelines for managing architecture documentation in the Memory Bank using arc42"
 globs: "system-scheme-management.md"
 alwaysApply: false
 ---
-# MEMORY BANK SYSTEM SCHEME MANAGEMENT
+# MEMORY BANK ARCHITECTURE DOCUMENTATION (arc42)
 
 ## Overview
-System schemes describe the architecture of the product at two detail levels:
+Architecture documentation follows the arc42 template structure, providing comprehensive system documentation at multiple levels:
 
-* **C1** – the product is a black box. The scheme lists external systems and the protocols used to communicate with them.
-* **C2** – expands the black box into its internal service components, showing protocols between them and connections to the same external black boxes.
+* **System Context** – describes the system's environment, external interfaces, and stakeholders (arc42 Section 3)
+* **Building Block View** – shows the system's internal structure and components (arc42 Section 5)
 
-Both scheme levels help coordinate planning and design.
-Record each scheme's file path in `tasks.md` so every workflow phase can load the appropriate diagram.
+Both documentation levels help coordinate planning and design following established architecture documentation standards.
+Record each architecture document's file path in `tasks.md` so every workflow phase can load the appropriate documentation.
 
-## \ud83d\udcc1 System Scheme Template
+## 📁 Architecture Documentation Template
 | Field | Description |
 |-------|-------------|
-| **Product/Context Name** | Name of the system or capability |
-| **Purpose** | What this system does |
-| **External Systems** | Other black boxes that interact with it |
-| **Protocols** | HTTP, gRPC, messaging, etc. |
-| **Internal Capabilities** | Optional list of key services or contexts |
-| **Data Stores** | Databases or persistence layers |
-| **Diagram** | Mermaid diagram code describing the scheme |
-| **Notes** | Additional context |
+| **System Name** | Name of the system or capability |
+| **Purpose** | What this system does (arc42 Section 1) |
+| **Stakeholders** | Who is involved with this system (arc42 Section 2) |
+| **System Context** | Business and technical context (arc42 Section 3) |
+| **Solution Strategy** | Key decisions and approaches (arc42 Section 4) |
+| **Building Blocks** | System components and structure (arc42 Section 5) |
+| **Interfaces** | External and internal interfaces (arc42 Section 6) |
+| **Quality Scenarios** | Quality requirements (arc42 Section 10) |
+| **Diagram** | Mermaid diagram code describing the architecture |
+| **Notes** | Additional context and decisions |
 
-Schemes must be defined using Mermaid so the diagram code can be stored directly in the repository and versioned like other documents.
+Architecture documentation must be defined using Mermaid so diagrams can be stored directly in the repository and versioned like other documents.
 
-C2 schemes expand **Internal Capabilities** into explicit components and list the protocols between them.
+Building Block Views expand components into explicit sub-components and show their relationships and interfaces.
 
-## \ud83d\uddd3\ufe0f Scheme Lifecycle
+## 🗓️ Documentation Lifecycle
 ```mermaid
 graph TD
-    Draft["Draft Scheme"] --> Review["Peer Review"]
+    Draft["Draft Architecture"] --> Review["Peer Review"]
     Review --> Approve{"Approved?"}
     Approve -->|"Yes"| Use["Use in Development"]
-    Approve -->|"No"| Revise["Revise Scheme"]
+    Approve -->|"No"| Revise["Revise Architecture"]
     Use --> UpdateMB["Update Memory Bank"]
     Revise --> Draft
 ```
 
-## \ud83d\uddc2 Storage Conventions
-Store the C1 scheme under `memory-bank/system-schemes/c1.md`.
-Store the C2 scheme under `memory-bank/system-schemes/c2.md`.
-Update `memory-bank/system-schemes/index.md` on every addition.
+## 🗂️ Storage Conventions
+Store the System Context under `memory-bank/architecture/system-context.md`.
+Store the Building Block View under `memory-bank/architecture/building-blocks.md`.
+Update `memory-bank/architecture/index.md` on every addition.
 
-## \ud83d\udca1 Checklist
-* [ ] Scheme captures purpose and interfaces
-* [ ] Diagram included if useful
+## 💡 Checklist
+* [ ] Architecture captures purpose and interfaces
+* [ ] Diagrams included following arc42 structure
 * [ ] Peer review finished
 * [ ] Linked from relevant tasks

@@ -72,7 +72,7 @@ graph TD
 
 ## IMPLEMENTATION STEPS
 
-### Step 1: READ MAIN RULE, TASKS, SCENARIO & SYSTEM SCHEME
+### Step 1: READ MAIN RULE, TASKS, SCENARIO & ARCHITECTURE DOCUMENTATION
 ```
 read_file({
   target_file: ".github/instructions/rules/isolation_rules/main.md",
@@ -90,7 +90,7 @@ read_file({
 })
 
 read_file({
-  target_file: "[system scheme path from tasks.md (C1 or C2)]",
+  target_file: "[architecture documentation path from tasks.md (System Context or Building Blocks)]",
   should_read_entire_file: true
 })
 ```

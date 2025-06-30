@@ -81,7 +81,7 @@ read_file({
 })
 ```
 
-### Step 2: READ TASKS, SCENARIO, SYSTEM SCHEME & IMPLEMENTATION PLAN
+### Step 2: READ TASKS, SCENARIO, ARCHITECTURE DOCUMENTATION & IMPLEMENTATION PLAN
 ```
 read_file({
   target_file: "tasks.md",
@@ -94,7 +94,7 @@ read_file({
 })
 
 read_file({
-  target_file: "[system scheme path from tasks.md (C1 or C2)]",
+  target_file: "[architecture documentation path from tasks.md (System Context or Building Blocks)]",
   should_read_entire_file: true
 })
 

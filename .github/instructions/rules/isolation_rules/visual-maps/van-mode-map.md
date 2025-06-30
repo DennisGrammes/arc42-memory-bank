@@ -97,8 +97,8 @@ graph TD
     MBExists -->|"Yes"| VerifyMB["Verify Memory Bank<br>Contents"]
     MBExists -->|"No"| CreateMB["Create Memory Bank<br>Structure"]
 
-    VerifyMB --> SchemeCheck["Check System Scheme Paths"]
-    CreateMB --> SchemeInit["Create System Scheme Stubs"]
+    VerifyMB --> ArchCheck["Check Architecture Documentation Paths"]
+    CreateMB --> ArchInit["Create Architecture Documentation Stubs"]
     
     CheckFiles --> CheckDocs["Check Documentation<br>Files"]
     CheckDocs --> DocsExist{"Docs<br>Exist?"}
